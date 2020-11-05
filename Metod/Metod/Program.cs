@@ -7,98 +7,78 @@ namespace Metod
     {
         static void Main(string[] args)
         {
-            string typpe="";
-            object type = "";
-           string arg = Console.ReadLine();
-            GetType(arg,type,typpe);
+            string type = "";
+            object obj = "";
+            string arg = Console.ReadLine();
+            GetType(arg, obj, type);
         }
-        static void GetType( string arg, object type, string typpe)
+        static void GetType(string arg, object obj, string type)
         {
+            sbyte sbuteArg;
+            byte buteArg;
+            short shortArg;
+            ushort ushortArg;
+            uint uintArg;
+            int intArg;
+            long longArg;
+            ulong ulongArg;
+            double doubleArg;
+            float floatArg;
+            char charArg;
 
-
-            sbyte SButeArg;
-            byte ButeArg;
-            short ShortArg;
-            ushort UShortArg;
-            uint UIntArg;
-            int IntArg;
-            long LongArg;
-            ulong ULongArg;
-            double DoubleArg;
-            float FloatArg;
-            char CharArg;
-
-
-            bool SButeType = sbyte.TryParse(arg, out SButeArg);
-            bool ButeType = byte.TryParse(arg, out ButeArg);
-            bool ShortType = short.TryParse(arg, out ShortArg);
-            bool UShortType = ushort.TryParse(arg, out UShortArg);
-            bool UIntType = uint.TryParse(arg, out UIntArg);
-            bool IntType = int.TryParse(arg, out IntArg);
-            bool ULongType = ulong.TryParse(arg, out ULongArg);
-            bool LongType = long.TryParse(arg, out LongArg);
-            bool FloatType = float.TryParse(arg, out FloatArg);
-            bool DoubleType = double.TryParse(arg, out DoubleArg);
-            bool CharType = char.TryParse(arg, out CharArg);
-
-
-
-
-
-
+            bool SButeType = sbyte.TryParse(arg, out sbuteArg);
+            bool ButeType = byte.TryParse(arg, out buteArg);
+            bool ShortType = short.TryParse(arg, out shortArg);
+            bool UShortType = ushort.TryParse(arg, out ushortArg);
+            bool UIntType = uint.TryParse(arg, out uintArg);
+            bool IntType = int.TryParse(arg, out intArg);
+            bool ULongType = ulong.TryParse(arg, out ulongArg);
+            bool LongType = long.TryParse(arg, out longArg);
+            bool FloatType = float.TryParse(arg, out floatArg);
+            bool DoubleType = double.TryParse(arg, out doubleArg);
+            bool CharType = char.TryParse(arg, out charArg);
 
             switch (true)
             {
-
                 case true when SButeType:
-                    type = SButeArg.GetType();
+                    obj = sbuteArg.GetType();
                     break;
                 case true when ButeType:
-                    type = ButeArg.GetType();
+                    obj = buteArg.GetType();
                     break;
-
-                case true when  UShortType:
-                    type =  ShortArg.GetType();
+                case true when UShortType:
+                    obj = shortArg.GetType();
                     break;
                 case true when ShortType:
-                    type = ShortArg.GetType();
+                    obj = shortArg.GetType();
                     break;
                 case true when UIntType:
-                    type = UIntArg.GetType();
+                    obj = uintArg.GetType();
                     break;
                 case true when IntType:
-                    type = IntArg.GetType();
+                    obj = intArg.GetType();
                     break;
-
                 case true when ULongType:
-                    type = ULongArg.GetType();
+                    obj = ulongArg.GetType();
                     break;
-
                 case true when LongType:
-                    type = LongArg.GetType();
+                    obj = longArg.GetType();
                     break;
-
                 case true when FloatType:
-                    type = FloatArg.GetType();
+                    obj = floatArg.GetType();
                     break;
-
                 case true when DoubleType:
-                    type = DoubleArg.GetType();
+                    obj = doubleArg.GetType();
                     break;
-
                 case true when CharType:
-                    type = CharArg.GetType();
+                    obj = charArg.GetType();
                     break;
-
                 default:
-                    type = arg.GetType();
+                    obj = arg.GetType();
                     break;
-
             }
-
-             typpe = type.ToString();
-
-            Console.WriteLine($"{arg} is {typpe}"); 
+            type = obj.ToString();
+            Console.WriteLine($"{arg} is {type}");
         }
     }
 }
