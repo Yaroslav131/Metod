@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\.NET\\ДЗ методы\\Metod\\Metod\\Metod.csproj": {}
+    "C:\\Users\\berse\\Documents\\Metod\\Metod\\Metod\\Metod.csproj": {}
   },
   "projects": {
-    "D:\\.NET\\ДЗ методы\\Metod\\Metod\\Metod.csproj": {
+    "C:\\Users\\berse\\Documents\\Metod\\Metod\\Metod\\Metod.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\.NET\\ДЗ методы\\Metod\\Metod\\Metod.csproj",
+        "projectUniqueName": "C:\\Users\\berse\\Documents\\Metod\\Metod\\Metod\\Metod.csproj",
         "projectName": "Metod",
-        "projectPath": "D:\\.NET\\ДЗ методы\\Metod\\Metod\\Metod.csproj",
+        "projectPath": "C:\\Users\\berse\\Documents\\Metod\\Metod\\Metod\\Metod.csproj",
         "packagesPath": "C:\\Users\\berse\\.nuget\\packages\\",
-        "outputPath": "D:\\.NET\\ДЗ методы\\Metod\\Metod\\obj\\",
+        "outputPath": "C:\\Users\\berse\\Documents\\Metod\\Metod\\Metod\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\berse\\AppData\\Roaming\\NuGet\\NuGet.Config",
